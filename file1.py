@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 
 # step 2..... data create
 data={"Customer Id": [1,2,3,4,5],
-      "Name":["iqra","shan","asia","mohid","aizal"],
+      "Name":["A","B","C","D","E"],
       "Age":[22,23,24,27,29],
       "Gender":["Female","Male","Female","Male","Female"],
       "Purchase Amount":[250,300,430,150,350]
