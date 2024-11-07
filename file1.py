@@ -6,25 +6,25 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-# step 2..... data create
+# step 2..... Data create
 data={"Customer Id": [1,2,3,4,5],
       "Name":["A","B","C","D","E"],
       "Age":[22,23,24,27,29],
       "Gender":["Female","Male","Female","Male","Female"],
       "Purchase Amount":[250,300,430,150,350]
       }
-# step 3..... data ko dataframe ma converd karna      
+# step 3..... Converd to Datafarme      
 df=pd.DataFrame(data)
 
-# step 4 .... data ko explore karna
+# step 4 .... Data explore
 print("Customer Data:")
 print(df)
 
-# step 4.... Averge purchase Amount calculate karna
+# step 4.... Calculate the Averge purchase Amount 
 average_purchase=df["Purchase Amount"].mean()
 print(f"\nAverage Purchase Amount : {average_purchase}")
 
-# step 5....Genderwise purchase amount sum calculte karna
+# step 5.... Calculate the sum Genderwise purchase amount 
 gender_purchase=df.groupby("Gender")["Purchase Amount"].sum()
 print("\nTotal Purchase by Gender:")
 print(gender_purchase)
